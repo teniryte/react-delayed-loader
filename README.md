@@ -25,7 +25,7 @@ function MyComponent() {
   const [isLoading, setIsLoading] = useState(false);
   
   const showLoading = useDelayedLoader(isLoading, {
-    after: 300,        // Show spinner after 300ms
+    after: 300,        // Show loader if loading takes longer than 300 milliseconds
     minDuration: 500   // Keep spinner visible for at least 500ms
   });
 

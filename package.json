@@ -1,6 +1,6 @@
 {
   "name": "react-delayed-loader",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A React hook that delays loading spinner display",
   "main": "./dist/index.js",
   "scripts": {
