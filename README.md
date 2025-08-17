@@ -2,7 +2,7 @@
 
 # react-delayed-loader
 
-A React hook that delays loading spinner display to improve user experience by preventing flickering for quick operations.
+A React hook that delays loader display to improve user experience by preventing flickering for quick operations.
 
 If loading time is less than `options.after`, the hook returns false. If loading time is more than `options.after`, the hook returns true for at least `options.minDuration` milliseconds.
 
@@ -26,7 +26,7 @@ function MyComponent() {
   
   const showLoading = useDelayedLoader(isLoading, {
     after: 300,        // Show loader if loading takes longer than 300 milliseconds
-    minDuration: 500   // Keep spinner visible for at least 500ms
+    minDuration: 500   // Keep loader visible for at least 500ms
   });
 
   return (
@@ -45,16 +45,16 @@ function MyComponent() {
 **Parameters:**
 - `isLoading` (boolean): Current loading state
 - `options` (object):
-  - `after` (number): Delay before showing spinner (default: 300ms)
-  - `minDuration` (number): Minimum time to keep spinner visible (default: 500ms)
+  - `after` (number): Delay before showing loader (default: 300ms)
+  - `minDuration` (number): Minimum time to keep loader visible (default: 500ms)
 
 **Returns:**
-- `boolean`: Whether to show the loading spinner
+- `boolean`: Whether to show the loader
 
 ## Features
 
-- **Prevents flickering**: Only shows spinner for operations that take longer than the specified delay
-- **Minimum duration**: Ensures spinner is visible for a minimum time to avoid jarring transitions
+- **Prevents flickering**: Only shows loader for operations that take longer than the specified delay
+- **Minimum duration**: Ensures loader is visible for a minimum time to avoid jarring transitions
 - **Performance optimized**: Uses `performance.now()` for precise timing
 - **TypeScript support**: Fully typed with TypeScript
 
