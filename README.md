@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/react-delayed-loader.svg?color=blue)](https://www.npmjs.com/package/react-delayed-loader) [![npm downloads](https://img.shields.io/npm/dm/react-delayed-loader.svg?color=brightgreen)](https://www.npmjs.com/package/react-delayed-loader) [![GitHub stars](https://img.shields.io/github/stars/teniryte/react-delayed-loader?style=social)](https://github.com/teniryte/react-delayed-loader) [![License](https://img.shields.io/github/license/teniryte/react-delayed-loader)](LICENSE)
+
 # react-delayed-loader
 
 A React hook that delays loading spinner display to improve user experience by preventing flickering for quick operations.
