@@ -1,6 +1,6 @@
 {
   "name": "react-delayed-loader",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "A React hook that delays loading spinner display",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
@@ -15,6 +15,8 @@
   },
   "scripts": {
     "build": "tsup",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "prepublishOnly": "npm run build"
   },
   "author": "teniryte <teniryte@gmail.com>",
@@ -42,6 +44,11 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.26",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tsup": "^8.5.0",
