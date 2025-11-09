@@ -1,5 +1,14 @@
 import { useEffect, useState, useRef } from 'react';
 
+/**
+ * A React hook that delays loading spinner display to prevent flickering for quick operations.
+ *
+ * @param isLoading - Current loading state
+ * @param options - Configuration options
+ * @param options.after - Delay before showing loader in milliseconds (default: 300)
+ * @param options.minDuration - Minimum time to keep loader visible in milliseconds (default: 500)
+ * @returns Whether to show the loader
+ */
 export const useDelayedLoader = (
   isLoading: boolean,
   {
