@@ -6,8 +6,11 @@ export const useDelayedLoader = (
     after = 300,
     minDuration = 500,
   }: {
-    after: number;
-    minDuration: number;
+    after?: number;
+    minDuration?: number;
+  } = {
+    after: 300,
+    minDuration: 500,
   }
 ) => {
   const [showLoading, setShowLoading] = useState(false);
