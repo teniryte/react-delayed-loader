@@ -18,6 +18,23 @@
   },
   "author": "teniryte <teniryte@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teniryte/react-delayed-loader"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "loader",
+    "spinner",
+    "delay",
+    "loading",
+    "typescript",
+    "react-hook",
+    "delayed-loader",
+    "flickering-prevention",
+    "ux"
+  ],
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
