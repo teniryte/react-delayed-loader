@@ -2,6 +2,4 @@ node_modules/
 src/
 tsconfig.json
 tsup.config.ts
-package.json
-README.md
 *.log
