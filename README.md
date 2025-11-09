@@ -2,9 +2,16 @@
 
 # react-delayed-loader
 
-A React hook that delays loader display to improve user experience by preventing flickering for quick operations.
+A React hook that delays the loader display to improve user experience by preventing flickering for quick operations.
 
-If loading time is less than `options.after`, the hook returns false. If loading time is more than `options.after`, the hook returns true for at least `options.minDuration` milliseconds.
+If loading takes less than `options.after`, the hook returns `false`. If loading takes more than `options.after`, the hook returns `true` for at least `options.minDuration` milliseconds.
+
+## Features
+
+- **Prevents flickering**: Only shows loader for operations that take longer than the specified delay.
+- **Minimum duration**: Ensures loader is visible for a minimum time to avoid jarring transitions.
+- **Performance-optimized**: Uses `performance.now()` for precise timing.
+- **TypeScript support**: Fully typed with TypeScript.
 
 ## Installation
 
@@ -23,6 +30,8 @@ import { useDelayedLoader } from 'react-delayed-loader';
 
 function MyComponent() {
   const [isLoading, setIsLoading] = useState(false);
+
+  // ...
   
   const showLoading = useDelayedLoader(isLoading, {
     after: 300,        // Show loader if loading takes longer than 300 milliseconds
@@ -43,20 +52,13 @@ function MyComponent() {
 ### `useDelayedLoader(isLoading, options)`
 
 **Parameters:**
-- `isLoading` (boolean): Current loading state
+- `isLoading` (boolean): Current loading state.
 - `options` (object):
-  - `after` (number): Delay before showing loader (default: 300ms)
-  - `minDuration` (number): Minimum time to keep loader visible (default: 500ms)
+  - `after` (number): Delay before showing loader (default: 300ms).
+  - `minDuration` (number): Minimum time to keep loader visible (default: 500ms).
 
 **Returns:**
 - `boolean`: Whether to show the loader
-
-## Features
-
-- **Prevents flickering**: Only shows loader for operations that take longer than the specified delay
-- **Minimum duration**: Ensures loader is visible for a minimum time to avoid jarring transitions
-- **Performance optimized**: Uses `performance.now()` for precise timing
-- **TypeScript support**: Fully typed with TypeScript
 
 ## License
 
