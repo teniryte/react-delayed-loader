@@ -3,6 +3,7 @@
   "version": "0.1.7",
   "description": "A React hook that delays loading spinner display",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "prepublishOnly": "npm run build"
